@@ -13,7 +13,7 @@ function Bird()
     this.y = height/2.3;
 
     this.gravity = 0.8;
-    this.lift = -15;
+    this.lift = -11;
     this.velocity = 0;
 
     this.showstart = function()
@@ -36,7 +36,7 @@ function Bird()
     this.update = function()
     {
         this.velocity += this.gravity;
-        this.velocity *= 0.95;
+        this.velocity *= 0.85;
         this.y += this.velocity;
 
         if( this.y>height-fbird.height/10 )
